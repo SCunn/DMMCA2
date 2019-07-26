@@ -1,0 +1,161 @@
+<html>
+	<head>
+		<title>WindTurbines</title>
+		<style>
+			*{
+				margin:0;
+				padding:0;
+			}
+			.sky{
+				height: 100vh;
+				width: 100%;
+				background-image: url(images/sky.jpg);
+				background-size: cover;
+				background-position:center;
+				position: relative;
+				overflow-x: hidden;
+			}
+			.fore{
+				height: 100vh;
+				width: 100%;
+				
+				background-image: url(images/hills.png);
+				background-size: cover;
+				background-position:center;
+				position: relative;
+				
+				z-index: 1;
+				
+			}
+			.pole{
+				width:55px;
+				left:72%;
+				bottom: 0%;
+				
+				position: absolute;
+				z-index: 2;
+			}
+			
+			
+			.pole1{
+				height: 75%;
+				width: 70%
+			}
+			
+			.pole2{
+				width:55px;
+				left:50%;
+				bottom: 29%;
+				
+				position: absolute;
+				z-index: 1;
+			}
+			.pol2{
+				height: 33%;
+				width: 33%;
+			}
+			
+			.pole3{
+				width:55px;
+				left:30%;
+				bottom: 43%;
+				
+				position: absolute;
+				z-index: 0;
+			}
+			.pol3{
+				height: 15%;
+				width: 13%;
+			}
+			.blades{
+				left:73%;
+				
+				top: -35%;
+				transform: translateX(-50%);
+				position: absolute;
+				z-index: 2;
+			}
+			.blades img{
+				
+				animation: blades 4s linear infinite;
+				
+			}
+			@keyframes blades{
+				100%{
+					transform: rotate(360deg); 
+				}
+			}
+			
+			.blades2{
+				left:60.4%;
+				
+				top: 20%;
+				transform: translateX(-50%);
+				position: absolute;
+				z-index: 1;
+			}
+			
+			.blades2 img{
+				
+				width: 50%;
+				animation: blades2 6s linear infinite;
+			}
+			
+			@keyframes blades2{
+				100%{
+					transform: rotate(360deg); 
+				}
+			}
+			
+			.blades3{
+				left:50%;
+				
+				top: 33.3%;
+				transform: translateX(-50%);
+				position: absolute;
+				z-index: 0;
+			}
+			
+			.blades3 img{
+				
+				width: 20%;
+				animation: blades2 5s linear infinite;
+			}
+			
+			@keyframes blades3{
+				100%{
+					transform: rotate(360deg); 
+				}
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div class="sky">
+			<div class="fore"></div>
+			<div class="pole">
+				<img src="images/rect.png" class="pole1" >
+			</div>
+			<div class="pole2">
+				<img src="images/rect.png" class="pol2" >
+			</div>
+			<div class="pole3">
+				<img src="images/rect.png" class="pol3" >
+			</div>
+			<div class="blades">
+				<img src="images/blades.png" >
+				
+			</div>
+			<div class="blades2">
+				<img src="images/blades.png" >
+			</div>
+			
+			<div class="blades3">
+				<img src="images/blades.png" >
+			</div>
+			
+		</div>
+	
+	</body>
+</html>
