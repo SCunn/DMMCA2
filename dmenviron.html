@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<title>Climate Change Campaign</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+
+<style>
+
+body, html {
+  height: 100%;
+  font-family: "lato", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url(".jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+
+
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-green">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-green">Home</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-green">What is Climate Change?</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-green">How Can You Help?</a>
+    </div>
+	<div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-green">Contact Us</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">the<br>Cafe</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">15 Adr street, 5015</span>
+  </div>
+</header>
+
+
+<!-- Add background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">What is Climate Change?</span></h5>
+    <p>Paragraph</p>
+    <p>Paragraph</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Quote"</i></p>
+      <p>Environmentalist: David Attenborough</p>
+    </div>
+    <img src=".jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Opening hours:</strong> 9am to 6pm.</p>
+    <p><strong>Address:</strong> 123 Planet Earth, 40278D Ireland</p>
+  </div>
+</div>
+
+
+<!-- How Can You Help? Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">How Can You Help?</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'buying');" id="myLink">
+        <div class="w3-col s6 tablink">Buying</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'habits');">
+        <div class="w3-col s6 tablink">Habits</div>
+      </a>
+    </div>
+
+    <div id="buying" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Food</h5>
+      <p class="w3-text-grey">Suggestion of small food related change to make</p><br>
+    
+      <h5>Plastics</h5>
+      <p class="w3-text-grey">Suggestion of small packaging related change to make</p><br>
+    
+      <h5>Sustainable Fashion</h5>
+      <p class="w3-text-grey">Suggestion of small fashion related change to make</p><br>
+    
+    </div>
+
+    <div id="habits" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Habit Change 1</h5>
+      <p class="w3-text-grey">Sustainable</p><br>
+    
+      <h5>Habit Change 2</h5>
+      <p class="w3-text-grey">Sustainable</p><br>
+    
+      <h5>Habit Change 3</h5>
+      <p class="w3-text-grey">Sustainable</p><br>
+    
+    </div>  
+    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p>Find us at some address at some place.</p>
+    <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
+       <p>Drop us a message today, we have plenty more tips up our sleeve</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="email" placeholder="@email.com" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-green" type="submit">Contact Us</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
