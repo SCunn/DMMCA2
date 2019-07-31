@@ -1,7 +1,5 @@
 
 
-
-
 body, html {
   height: 100%;
   font-family: "Inconsolata", sans-serif;
@@ -74,7 +72,7 @@ body, html {
 .blades{
 		left:7%;
 		
-		top: -51%;
+		top: -90%;
 		transform: translateX(-50%);
 		position: absolute;
 		z-index: 2;
