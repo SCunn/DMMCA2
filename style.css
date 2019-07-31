@@ -1,5 +1,7 @@
 
 
+
+
 body, html {
   height: 100%;
   font-family: "Inconsolata", sans-serif;
@@ -31,7 +33,7 @@ body, html {
 .pole{
 	/* width:55px; */
 	left: 8%;
-	/*bottom: 0%; */
+	bottom: 0%;
 	
 	position: absolute;
 	z-index: 2;
@@ -40,7 +42,7 @@ body, html {
 .pole_1{
 	/* width:55px; */
 	left: 29%;
-	/*bottom: 0%; */
+	bottom: 0%;
 	
 	position: absolute;
 	z-index: 2;
@@ -49,7 +51,7 @@ body, html {
 .pole_2{
 	/* width:55px; */
 	left: 55%;
-	/*bottom: 0%; */
+	bottom: 0%;
 	
 	position: absolute;
 	z-index: 2;
@@ -58,7 +60,7 @@ body, html {
 .pole_3{
 	/* width:55px; */
 	left: 80%;
-	/*bottom: 0%; */
+	bottom: 0%;
 	
 	position: absolute;
 	z-index: 2;
