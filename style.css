@@ -188,7 +188,7 @@ body, html {
 			.blades{
 				left:38%;
 				
-				top: -183%;
+				top: -292px;
 				transform: translateX(-50%);
 				position: absolute;
 				z-index: 2;
@@ -207,7 +207,7 @@ body, html {
 			.blades2{
 				left:15.4%;
 				
-				top: -81%;
+				top: -95px;
 				transform: translateX(-50%);
 				position: absolute;
 				z-index: 1;
@@ -232,7 +232,7 @@ body, html {
 			.blades3{
 				left:2px;
 				
-				top: -90.9%;
+				top: -45px;
 				transform: translateX(-50%);
 				position: absolute;
 				z-index: 0;
