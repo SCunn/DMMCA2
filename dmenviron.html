@@ -159,7 +159,7 @@ Header with image
       <a href="javascript:void(0)" onclick="openMenu(event, 'buying');" id="myLink">
         <div class="w3-col s6 tablink">The Sustainable Consumer</div>
       </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'habits');">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'habits');" id="myLink">
         <div class="w3-col s6 tablink">Eco-Friendly Habits</div>
       </a>
     </div>
@@ -244,13 +244,20 @@ document.getElementById("myLink").click();
 //  navbar menu mobile
 $(document).ready(function(){
 	$("#flip").click(function(){
-		$("#navMenuDrop").slideDown(1100).delay(5000).fadeOut(2000);
+		$("#navMenuDrop").slideToggle(1100);
+	});
+});
+
+$(document).ready(function(){
+	$(document).scroll(function(){
+		$("#navMenuDrop").fadeOut(2500);
+		
 	});
 });
 
 // Sound Effects click
 var klIck = $("#klick")[0];
-$("#myTopNav a").click(function() {
+$("#myTopNav a, #flip, #myLink").click(function() {
 		klIck.play();
 	});
 </script>
