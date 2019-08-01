@@ -2,9 +2,10 @@
 	<head>
 	<title>Climate Change Campaign</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 	<link rel="stylesheet" href="style.css" type="text/css"/>
@@ -16,56 +17,44 @@
 
 
 <!-- Links (sit on top) -->
-<div id="myTopNav" class="w3-top" >
+<div  class="w3-top" >
 	
 	
-  <div class="w3-row w3-padding w3-green">
-    <div class="w3-col s3">
+	<div class="w3-row w3-padding w3-green">
+	  <div id="myTopNav">
+		<div class="w3-col s3">
+			
+		  <a href="#" class="w3-button w3-block w3-green">Home</a>
+		</div>
+		<div class="w3-col s3">
+				
+		  <a href="#about" class="w3-button w3-block w3-green">What is Climate Change?</a>
+		</div>
+		<div class="w3-col s3">
 		
-			<!-- <div class="pole">
-					<img src="images/rect.png" class="pole1" >
-					<div class="blades">
-					<img src="images/blades.png" >
-				</div>
-			</div> -->
+		  <a href="#menu" class="w3-button w3-block w3-green">How Can You Help?</a>
+		</div>
+		<div class="w3-col s3">
 		
-      <a href="#" class="w3-button w3-block w3-green">Home</a>
-    </div>
-    <div class="w3-col s3">
-			<!-- <div class="pole_1">
-					<img src="images/rect.png" class="pole1" >
-					<div class="blades">
-					<img src="images/blades.png" >
-				</div>
-			</div> -->
-      <a href="#about" class="w3-button w3-block w3-green">What is Climate Change?</a>
-    </div>
-    <div class="w3-col s3">
+		  <a href="#where" class="w3-button w3-block w3-green">Contact Us</a>
+			
+		</div>
+	  </div>
+	  <!-- responsive menu -->	
+		<div>
+			<i id="flip" class="fa fa-bars w3-xlarge w3-button w3-theme" ></i> 
+			
+		</div>
+	  
+	</div>
 	
-		<!-- <div class="pole_2">
-					<img src="images/rect.png" class="pole1" >
-					<div class="blades">
-					<img src="images/blades.png" >
-				</div>
-		</div> -->
-	
-      <a href="#menu" class="w3-button w3-block w3-green">How Can You Help?</a>
-    </div>
-	<div class="w3-col s3">
-	
-		<!-- <div class="pole_3">
-					<img src="images/rect.png" class="pole1" >
-					<div class="blades">
-					<img src="images/blades.png" >
-				</div>
-			</div> -->
-      <a href="#where" class="w3-button w3-block w3-green">Contact Us</a>
-		
-    </div>
-		<!-- responsive menu -->
-	    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-			<i class="burger"></i>
-		</a>
+  <div id="navMenuDrop">
+		<ul>
+			<li><a href="#" class="w3-button w3-block w3-green">Home</a></li>
+			<li><a href="#about" class="w3-button w3-block w3-green">What is Climate Change?</a></li>
+			<li><a href="#menu" class="w3-button w3-block w3-green">How Can You Help?</a></li>
+			<li><a href="#where" class="w3-button w3-block w3-green">Contact Us</a></li>
+		</ul>
   </div>
 </div>
 
@@ -221,16 +210,12 @@ function openMenu(evt, menuName) {
 }
 document.getElementById("myLink").click();
 
-// Responsive navbar
-
-function myFunction() {
-  var x = document.getElementById("myTopNav");
-  if (x.className === "w3-top") {
-    x.className += " responsive";
-  } else {
-    x.className = "w3-top";
-  }
-} 
+//  navbar menu mobile
+$(document).ready(function(){
+	$("#flip").click(function(){
+		$("#navMenuDrop").slideDown(1100).delay(5000).fadeOut(2000);
+	});
+});
 </script>
 
 </body>

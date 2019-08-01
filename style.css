@@ -20,38 +20,26 @@ body, html {
 
 /* Responsive NavBar */
 
-.burger{
-	display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
+#flip {
+	display: none;
 }
 
-.w3-top .icon {
-  display: none;
+#navMenuDrop {
+	display: none;
 }
 
-@media screen and (max-width: 786px) {
-  .w3-top a:not(:first-child) {display: none;}
-  .w3-top a.icon {
-    float: right;
-    display: block;
-  }
+@media screen and (max-width: 800px){
+	#flip {
+		display: block;
+		float: right;
+	}	
+	
+	#myTopNav {
+		display: none;
+	}
 }
 
-@media screen and (max-width: 786px) {
-  .w3-top.responsive {position: relative;}
-  .w3-top.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .w3-top.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
+
 
 /* Video */
 #myVideo {
@@ -74,7 +62,7 @@ body, html {
 	z-index: 2;
 }
 
-.pole_1{
+.sml_pole_1{
 	
 	left: 29%;
 	bottom: 0%;
@@ -83,28 +71,6 @@ body, html {
 	z-index: 2;
 }
 
-.pole_2{
-	
-	left: 55%;
-	bottom: 0%;
-	
-	position: absolute;
-	z-index: 2;
-}
-
-.pole_3{
-	
-	left: 80%;
-	bottom: 0%;
-	
-	position: absolute;
-	z-index: 2;
-}				
-			
-.pole1{
-	height: 5.2%;
-	width: 9.5%
-}
 
 .blades{
 		left:7%;
@@ -131,133 +97,141 @@ body, html {
 	}
  */
  
- /* Animation Banner */ 
+ /* Animation Banner */
  *{
-	margin:0;
-	padding:0;
-}
-.sky{
-	height: 25vh;
-	width: 100%;
-	background-image: url(images/sky.jpg);
-	background-size: cover;
-	background-position:center;
-	position: relative;
-	overflow: hidden;
-}
-.fore{
-	height: 25vh;
-	width: 100%;
-
-	background-image: url(images/hills.png);
-	background-size: cover;
-	background-position:center;
-	position: relative;
-
-	z-index: 1;
-
-}
-.pole{
-	width:27px;
-	left:77%;
-	bottom: 0%;
-
-	position: absolute;
-	z-index: 2;
-}
-
-
-.pole1{
-	height: 75%;
-	width: 70%
-}
-
-.pole2{
-	width:24px;
-	left:54%;
-	bottom: -2%;
-
-	position: absolute;
-	z-index: 1;
-}
-.pol2{
-	height: 57%;
-	width: 33%;
-}
-
-.pole3{
-	width:17px;
-	left:30%;
-	bottom: 35%;
-
-	position: absolute;
-	z-index: 0;
-}
-.pol3{
-	height: 23%;
-	width: 23%;
-}
-.blades{
-	left:38%;
-
-	top: -183%;
-	transform: translateX(-50%);
-	position: absolute;
-	z-index: 2;
-}
-.blades img{
-	width: 600px;
-	animation: blades 4s linear infinite;
-
-}
-@keyframes blades{
-	100%{
-		transform: rotate(360deg); 
-	}
-}
-
-.blades2{
-	left:15.4%;
-
-	top: -81%;
-	transform: translateX(-50%);
-	position: absolute;
-	z-index: 1;
-}
-
-@media only screen and (max-width:1959px){
-
-}
-
-.blades2 img{
-
-	width: 11em;
-	animation: blades2 6s linear infinite;
-}
-
-@keyframes blades2{
-	100%{
-		transform: rotate(360deg); 
-	}
-}
-
-.blades3{
-	left:2px;
-
-	top: -90.9%;
-	transform: translateX(-50%);
-	position: absolute;
-	z-index: 0;
-}
-
-.blades3 img{
-
-	width: 5.2em;
-	animation: blades2 5s linear infinite;
-}
-
-@keyframes blades3{
-	100%{
-		transform: rotate(360deg); 
-	}
-}
+				margin:0;
+				padding:0;
+			}
+			.sky{
+				height: 25vh;
+				width: 100%;
+				background-image: url(images/sky.jpg);
+				background-size: cover;
+				/*background-position:center; */
+				
+				position: relative;
+				overflow: hidden;
+				
+				
+			}
+			
+			
+			
+			
+				
+			.fore{
+				height: 25vh;
+				width: 100%;
+				
+				background-image: url(images/hills.png);
+				background-size: cover;
+				background-position:center;
+				position: relative;
+				
+				z-index: 1;
+				
+			}
+			.pole{
+				width:27px;
+				left:77%;
+				bottom: 0%;
+				
+				position: absolute;
+				z-index: 2;
+			}
+			
+			
+			.pole1{
+				height: 75%;
+				width: 70%
+			}
+			
+			.pole2{
+				width:24px;
+				left:54%;
+				bottom: -2%;
+				
+				position: absolute;
+				z-index: 1;
+			}
+			.pol2{
+				height: 57%;
+				width: 33%;
+			}
+			
+			.pole3{
+				width:17px;
+				left:30%;
+				bottom: 35%;
+				
+				position: absolute;
+				z-index: 0;
+			}
+			.pol3{
+				height: 23%;
+				width: 23%;
+			}
+			.blades{
+				left:38%;
+				
+				top: -183%;
+				transform: translateX(-50%);
+				position: absolute;
+				z-index: 2;
+			}
+			.blades img{
+				width: 600px;
+				animation: blades 4s linear infinite;
+				
+			}
+			@keyframes blades{
+				100%{
+					transform: rotate(360deg); 
+				}
+			}
+			
+			.blades2{
+				left:15.4%;
+				
+				top: -81%;
+				transform: translateX(-50%);
+				position: absolute;
+				z-index: 1;
+			}
+			
+			@media only screen and (max-width:1959px){
+			
+			}
+			
+			.blades2 img{
+				
+				width: 11em;
+				animation: blades2 6s linear infinite;
+			}
+			
+			@keyframes blades2{
+				100%{
+					transform: rotate(360deg); 
+				}
+			}
+			
+			.blades3{
+				left:2px;
+				
+				top: -90.9%;
+				transform: translateX(-50%);
+				position: absolute;
+				z-index: 0;
+			}
+			
+			.blades3 img{
+				
+				width: 5.2em;
+				animation: blades2 5s linear infinite;
+			}
+			
+			@keyframes blades3{
+				100%{
+					transform: rotate(360deg); 
+				}
+			}
