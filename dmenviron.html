@@ -25,6 +25,11 @@
 		<div class="w3-col s3">
 			
 		  <a href="#" class="w3-button w3-block w3-green">Home</a>
+		<!-- Audio link -->	
+		  <audio id="klick" preload="auto"> 
+			<source src="audio/KettleSwitch.mp3">
+			<source src="audio/KettleSwitch.ogg">
+		  </audio>
 		</div>
 		<div class="w3-col s3">
 				
@@ -242,6 +247,12 @@ $(document).ready(function(){
 		$("#navMenuDrop").slideDown(1100).delay(5000).fadeOut(2000);
 	});
 });
+
+// Sound Effects click
+var klIck = $("#klick")[0];
+$("#myTopNav a").click(function() {
+		klIck.play();
+	});
 </script>
 
 </body>
