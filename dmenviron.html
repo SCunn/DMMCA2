@@ -98,7 +98,7 @@ Header with image
 	  <p>The changes we need are radical and immediate, but we can begin with the very smallest of steps.</p>
 	  
 	  <div id = "slideshow_container" >
-		<script src="ImageGallery.js"></script>
+		
 		<center><img src="imagegallery/image1.png" id="image"> </center>
 	</div>
 	  
@@ -222,45 +222,8 @@ Header with image
 <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
+<script src="ImageGallery.js"></script>
 
-<script>
-
-// Tabbed Menu
-function openMenu(evt, menuName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("menu");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
-  }
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
-}
-document.getElementById("myLink").click();
-
-//  navbar menu mobile
-$(document).ready(function(){
-	$("#flip").click(function(){
-		$("#navMenuDrop").slideToggle(1100);
-	});
-});
-
-$(document).ready(function(){
-	$(document).scroll(function(){
-		$("#navMenuDrop").fadeOut(2500);
-		
-	});
-});
-
-// Sound Effects click
-var klIck = $("#klick")[0];
-$("#myTopNav a, #flip, #myLink").click(function() {
-		klIck.play();
-	});
-</script>
 
 </body>
 </html>
