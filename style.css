@@ -8,7 +8,7 @@ body, html {
 .bgimg {
   background-position: center;
   background-size: cover;
-  background-image: url("opaque bali pic.jpg");
+  /* background-image: url("opaque bali pic.jpg"); */
   min-height: 75%;
 }
 
@@ -53,7 +53,16 @@ body, html {
 	}
 }
 
-
+.spanWhiteTxt{
+	font-size: 90px;
+	color: #fff!important;
+}
+@media only screen and (max-width:426px){
+			.spanWhiteTxt {
+				font-size: 55px;
+				
+			}
+			}
 
 /* Video */
 #myVideo {
@@ -63,6 +72,13 @@ body, html {
   min-width: 100%; 
   min-height: 100%;
 }
+
+@media only screen and (max-width:1024px){
+			#myVideo {
+				width: 110%;
+				
+			}
+			}
 
 /* Wind Turbine Animation */
 
@@ -213,9 +229,7 @@ body, html {
 				z-index: 1;
 			}
 			
-			@media only screen and (max-width:1959px){
 			
-			}
 			
 			.blades2 img{
 				
