@@ -117,7 +117,7 @@ body, html {
 				padding:0;
 			}
 			.sky{
-				height: 25vh;
+				height: 200px;
 				width: 100%;
 				background-image: url(images/sky.jpg);
 				background-size: cover;
@@ -134,7 +134,7 @@ body, html {
 			
 				
 			.fore{
-				height: 25vh;
+				height: 200px;
 				width: 100%;
 				
 				background-image: url(images/hills.png);
@@ -148,7 +148,7 @@ body, html {
 			.pole{
 				width:27px;
 				left:77%;
-				bottom: 0%;
+				bottom: -510px;
 				
 				position: absolute;
 				z-index: 2;
@@ -163,10 +163,10 @@ body, html {
 			.pole2{
 				width:24px;
 				left:54%;
-				bottom: -2%;
+				bottom: -573px;
 				
 				position: absolute;
-				z-index: 1;
+				z-index: 0;
 			}
 			.pol2{
 				height: 57%;
@@ -176,7 +176,7 @@ body, html {
 			.pole3{
 				width:17px;
 				left:30%;
-				bottom: 35%;
+				bottom: -563px;
 				
 				position: absolute;
 				z-index: 0;
